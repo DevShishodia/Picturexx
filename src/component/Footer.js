@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <Navbar expand="lg" variant="light" bg="light" fixed="bottom">
         <Container>
-          <Navbar.Brand>Developed by &copy; Dev Shishodia!</Navbar.Brand>
+          <Navbar.Brand>Developed by Dev Shishodia!</Navbar.Brand>
         </Container>
       </Navbar>
     </>
