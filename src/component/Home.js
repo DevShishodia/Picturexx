@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import ImageList from './ImageList';
 import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroller';

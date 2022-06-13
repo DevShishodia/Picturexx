@@ -11,16 +11,16 @@ const Detail = () => {
 useEffect(()=>{
     axios.get(`https://api.unsplash.com/photos/${param.id}?per_page=20&client_id=${process.env.REACT_APP_API_KEY}`)
     .then(response => setSingleData(response.data));
-  },[])
+  },[param.id]);
 
-
+  
     return (
         <>
         {singleData.id ?
             <Container fluid className=' p-5' style={{backgroundColor: `${singleData?.color}35`}}>
                 <Row>
                     <Col md={6}>
-                        <img style={{ maxWidth: "100%", maxHeight: "75vh", borderRadius: "5px" }} src={singleData?.urls?.full} />
+                        <img style={{ maxWidth: "100%", maxHeight: "75vh", borderRadius: "5px" }} src={singleData?.urls?.full} alt="Unsplash" />
                     </Col>
                     <Col md={6}>
                         <h3>Uploaded By: {singleData?.user?.name} (@{singleData?.user?.id})</h3>
