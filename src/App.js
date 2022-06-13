@@ -5,6 +5,7 @@ import Home from './component/Home';
 import { Route, Routes } from 'react-router-dom';
 import Detail from './component/Detail';
 import Search from './component/Search';
+import Footer from './component/Footer';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
          <Route path='/search' element={<Search/>} ></Route>
          <Route path='/photo/:id' element={<Detail/>}></Route>
        </Routes>
-       
+       <Footer/>
     </>
   );
 }
